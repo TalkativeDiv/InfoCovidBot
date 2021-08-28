@@ -199,7 +199,7 @@ client.on("message", (msg) => {
           console.log(error);
         });
       break;
-    case "!CASESSKorea":
+    case "!CASESSKOREA":
       axios
         .get("https://corona.lmao.ninja/v2/countries/S.%20Korea")
         .then(function (response) {
