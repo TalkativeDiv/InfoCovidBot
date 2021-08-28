@@ -274,4 +274,4 @@ client.on("message", (msg) => {
   }
 });
 dotenv.config();
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORD_TOKEN);
