@@ -31,7 +31,7 @@ client.on("message", (msg) => {
           console.log(error);
         });
       break;
-    case "!COVIDUSA":
+    case "!CASESUSA":
       axios
         .get("https://corona.lmao.ninja/v2/countries/USA")
         .then(function (response) {
