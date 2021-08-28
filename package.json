@@ -1,0 +1,24 @@
+{
+  "name": "epicbot",
+  "version": "1.0.0",
+  "description": "Cool Bot pog",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "server": "nodemon main.js"
+  },
+  "keywords": [
+    "Cool",
+    "pog",
+    "poop"
+  ],
+  "author": "AHHHHHHHHHHHHHH",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  }
+}
