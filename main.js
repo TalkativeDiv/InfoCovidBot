@@ -223,18 +223,6 @@ client.on("message", (msg) => {
           console.log(error);
         });
       break;
-    case "!CASESPAKISTAN":
-      axios
-        .get("https://corona.lmao.ninja/v2/countries/Pakistan")
-        .then(function (response) {
-          msg.reply(
-            `There is ${response.data.cases} cases, ${response.data.deaths} deaths, ${response.data.recovered} recovered!`
-          );
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-      break;
     case "!CASESCANADA":
       axios
         .get("https://corona.lmao.ninja/v2/countries/Canada")
