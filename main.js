@@ -31,7 +31,7 @@ client.on("message", (msg) => {
           console.log(error);
         });
       break;
-    case "!COVIDUSA":
+    case "!CASESUSA":
       axios
         .get("https://corona.lmao.ninja/v2/countries/USA")
         .then(function (response) {
@@ -199,7 +199,7 @@ client.on("message", (msg) => {
           console.log(error);
         });
       break;
-    case "!CASESSKorea":
+    case "!CASESSKOREA":
       axios
         .get("https://corona.lmao.ninja/v2/countries/S.%20Korea")
         .then(function (response) {
@@ -214,18 +214,6 @@ client.on("message", (msg) => {
     case "!CASESCANADA":
       axios
         .get("https://corona.lmao.ninja/v2/countries/Canada")
-        .then(function (response) {
-          msg.reply(
-            `There is ${response.data.cases} cases, ${response.data.deaths} deaths, ${response.data.recovered} recovered!`
-          );
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-      break;
-    case "!CASESPAKISTAN":
-      axios
-        .get("https://corona.lmao.ninja/v2/countries/Pakistan")
         .then(function (response) {
           msg.reply(
             `There is ${response.data.cases} cases, ${response.data.deaths} deaths, ${response.data.recovered} recovered!`
